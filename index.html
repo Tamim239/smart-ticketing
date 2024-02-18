@@ -17,6 +17,7 @@
         .font-raleway {
             font-family: "Raleway", sans-serif;
         }
+        
     </style>
 
 </head>
@@ -171,7 +172,7 @@
                         </div>
                         <div class="flex items-center space-x-3 p-3 bg-[#1DD10026]">
                             <img src="images/seat-green.png" alt="seat">
-                            <h3><span>40</span> Seats left</h3>
+                            <h3><span id="seatDecrement" >40</span> Seats left</h3>
                         </div>
 
                     </div>
@@ -220,125 +221,125 @@
                     <div class="flex justify-end p-4 pr-7 ">
                         <img src="images/drive.svg" alt="drive" class="bg-[#03071225] px-6 py-2">
                     </div>
-                    <div>
+                    <div id="seat">
                         <!-- key1 -->
                         <div class="flex  my-1 w-full">
-                            <div id="A" class="rounded-xl bg-gray-300 px-4 py-2">A</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">A</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="A1" class="rounded-xl bg-gray-300 px-7 py-2">A1</div>
-                                <div id="A2" class="rounded-xl bg-gray-300 px-7 py-2">A2</div>
+                                <div id="A1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">A1</div>
+                                <div id="A2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">A2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="A3" class="rounded-xl bg-gray-300 px-7 py-2">A3</div>
-                                <div id="A4" class="rounded-xl bg-gray-300 px-7 py-2">A4</div>
+                                <div id="A3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">A3</div>
+                                <div id="A4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">A4</div>
                             </div>
                         </div>
                         <!-- key2 -->
                         <div class="flex  my-1 w-full">
-                            <div id="B" class="rounded-xl bg-gray-300 px-4 py-2">B</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">B</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="B1" class="rounded-xl bg-gray-300 px-7 py-2">B1</div>
-                                <div id="B2" class="rounded-xl bg-gray-300 px-7 py-2">B2</div>
+                                <div id="B1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">B1</div>
+                                <div id="B2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">B2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="B3" class="rounded-xl bg-gray-300 px-7 py-2">B3</div>
-                                <div id="B4" class="rounded-xl bg-gray-300 px-7 py-2">B4</div>
+                                <div id="B3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">B3</div>
+                                <div id="B4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">B4</div>
                             </div>
                         </div>
                         <!-- key3 -->
                         <div class="flex  my-1 w-full">
-                            <div id="C" class="rounded-xl bg-gray-300 px-4 py-2">C</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">C</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="C1" class="rounded-xl bg-gray-300 px-7 py-2">C1</div>
-                                <div id="C2" class="rounded-xl bg-gray-300 px-7 py-2">C2</div>
+                                <div id="C1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">C1</div>
+                                <div id="C2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">C2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="C3" class="rounded-xl bg-gray-300 px-7 py-2">C3</div>
-                                <div id="C4" class="rounded-xl bg-gray-300 px-7 py-2">C4</div>
+                                <div id="C3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">C3</div>
+                                <div id="C4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">C4</div>
                             </div>
                         </div>
                         <!-- key4 -->
                         <div class="flex  my-1 w-full">
-                            <div id="D" class="rounded-xl bg-gray-300 px-4 py-2">D</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">D</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="D1" class="rounded-xl bg-gray-300 px-7 py-2">D1</div>
-                                <div id="D2" class="rounded-xl bg-gray-300 px-7 py-2">D2</div>
+                                <div id="D1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">D1</div>
+                                <div id="D2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">D2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="D3" class="rounded-xl bg-gray-300 px-7 py-2">D3</div>
-                                <div id="D4" class="rounded-xl bg-gray-300 px-7 py-2">D4</div>
+                                <div id="D3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">D3</div>
+                                <div id="D4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">D4</div>
                             </div>
                         </div>
                         <!-- key5 -->
                         <div class="flex  my-1 w-full">
-                            <div id="E" class="rounded-xl bg-gray-300 px-4 py-2">E</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">E</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="E1" class="rounded-xl bg-gray-300 px-7 py-2">E1</div>
-                                <div id="E2" class="rounded-xl bg-gray-300 px-7 py-2">E2</div>
+                                <div id="E1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">E1</div>
+                                <div id="E2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">E2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="E3" class="rounded-xl bg-gray-300 px-7 py-2">E3</div>
-                                <div id="E4" class="rounded-xl bg-gray-300 px-7 py-2">E4</div>
+                                <div id="E3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">E3</div>
+                                <div id="E4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">E4</div>
                             </div>
                         </div>
                         <!-- key6 -->
                         <div class="flex  my-1 w-full">
-                            <div id="F" class="rounded-xl bg-gray-300 px-4 py-2">F</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">F</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="F1" class="rounded-xl bg-gray-300 px-7 py-2">F1</div>
-                                <div id="F2" class="rounded-xl bg-gray-300 px-7 py-2">F2</div>
+                                <div id="F1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">F1</div>
+                                <div id="F2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">F2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="F3" class="rounded-xl bg-gray-300 px-7 py-2">F3</div>
-                                <div id="F4" class="rounded-xl bg-gray-300 px-7 py-2">F4</div>
+                                <div id="F3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">F3</div>
+                                <div id="F4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">F4</div>
                             </div>
                         </div>
                         <!-- key7 -->
                         <div class="flex  my-1 w-full">
-                            <div id="G" class="rounded-xl bg-gray-300 px-4 py-2">G</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">G</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="G1" class="rounded-xl bg-gray-300 px-7 py-2">G1</div>
-                                <div id="G2" class="rounded-xl bg-gray-300 px-7 py-2">G2</div>
+                                <div id="G1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">G1</div>
+                                <div id="G2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">G2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="G3" class="rounded-xl bg-gray-300 px-7 py-2">G3</div>
-                                <div id="G4" class="rounded-xl bg-gray-300 px-7 py-2">G4</div>
+                                <div id="G3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">G3</div>
+                                <div id="G4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">G4</div>
                             </div>
                         </div>
                         <!-- key8 -->
                         <div class="flex  my-1 w-full">
-                            <div id="H" class="rounded-xl bg-gray-300 px-4 py-2">H</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">H</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="H1" class="rounded-xl bg-gray-300 px-7 py-2">H1</div>
-                                <div id="H2" class="rounded-xl bg-gray-300 px-7 py-2">H2</div>
+                                <div id="H1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">H1</div>
+                                <div id="H2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">H2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="H3" class="rounded-xl bg-gray-300 px-7 py-2">H3</div>
-                                <div id="H4" class="rounded-xl bg-gray-300 px-7 py-2">H4</div>
+                                <div id="H3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">H3</div>
+                                <div id="H4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">H4</div>
                             </div>
                         </div>
                         <!-- key9 -->
                         <div class="flex  my-1 w-full">
-                            <div id="I" class="rounded-xl bg-gray-300 px-4 py-2">I</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">I</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="I1" class="rounded-xl bg-gray-300 px-7 py-2">I1</div>
-                                <div id="I2" class="rounded-xl bg-gray-300 px-7 py-2">I2</div>
+                                <div id="I1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">I1</div>
+                                <div id="I2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">I2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="I3" class="rounded-xl bg-gray-300 px-7 py-2">I3</div>
-                                <div id="I4" class="rounded-xl bg-gray-300 px-7 py-2">I4</div>
+                                <div id="I3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">I3</div>
+                                <div id="I4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">I4</div>
                             </div>
                         </div>
                         <!-- key10 -->
                         <div class="flex  my-1 w-full">
-                            <div id="J" class="rounded-xl bg-gray-300 px-4 py-2">J</div>
+                            <div class="rounded-xl bg-gray-300 px-4 py-2">J</div>
                             <div class=" w-1/2 flex justify-around pr-10">
-                                <div id="J1" class="rounded-xl bg-gray-300 px-7 py-2">J1</div>
-                                <div id="J2" class="rounded-xl bg-gray-300 px-7 py-2">J2</div>
+                                <div id="J1" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">J1</div>
+                                <div id="J2" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">J2</div>
                             </div>
                             <div class="w-1/2 flex justify-around pl-10">
-                                <div id="J3" class="rounded-xl bg-gray-300 px-7 py-2">J3</div>
-                                <div id="J4" class="rounded-xl bg-gray-300 px-7 py-2">J4</div>
+                                <div id="J3" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">J3</div>
+                                <div id="J4" class=" seatNumber rounded-xl bg-gray-300 px-7 py-2">J4</div>
                             </div>
                         </div>
                     </div>
@@ -352,16 +353,20 @@
                     <!-- total and grand total cost section -->
                     <div class="rounded-xl bg-[#F7F8F8]">
                         <div class="flex justify-between  items-center p-5 border-b-2 border-dashed border-[#03071233]">
-                            <h1 class="font-medium">Seat <sup class="bg-[#1DD100] px-1">0</sup></h1>
+                            <h1 class="font-medium">Seat <sup id="count" class="bg-[#1DD100] px-1">0</sup></h1>
                             <h2 class="font-medium">Class</h2>
                             <h3 class="font-medium">Price</h3>
                         </div>
                         <!-- dynamic innerText -->
-                        <div class="flex justify-between px-5 items-center border-b-2 border-dashed border-[#03071233]">
+                        <div id="showAmount" class="*:flex *:justify-between px-5 items-center border-b-2 border-dashed border-[#03071233]">
+
                         </div>
-                        <div class="flex justify-between px-5 items-center">
-                            <h1>Total Price</h1>
+                        <div class=" *:flex *:justify-between px-5 items-center">
+                            <div>
+                                <h1>Total Price</h1>
                             <p>BDT <span>0</span></p>
+                            </div>
+                            <!-- dynamic discount  -->
                         </div>
                         <div class="m-5">
                             <input type="text" placeholder="Have any coupon?" class="w-[95%] py-4 pl-3">
@@ -418,6 +423,11 @@
 
     </footer>
 
+
+    <!-- js file -->
+
+    <script src="js/main.js"></script>
+    <script src="js/utilites.js"></script>
 </body>
 
 </html>
