@@ -10,3 +10,4 @@ function setTextParseInt(elements){
     const parseIntValue = parseInt(convertElement);
     return parseIntValue;
 }
+
