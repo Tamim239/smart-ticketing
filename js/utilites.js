@@ -11,6 +11,21 @@ function setTextParseInt(elements){
     return parseIntValue;
 }
 
+// return value
+function getAmountValue(elements, value){
+    const element = document.getElementById(elements)
+        const div = document.createElement("div");
+        const p = document.createElement("p");
+        p.innerText = "discount";
+        const p2 = document.createElement("p");
+       p2.innerText = value;
+        // append
+        div.appendChild(p);
+        div.appendChild(p2);
+        element.appendChild(div);
+        return value ;
+    }
+
 // disabled btn
 function disabledByBtn(elements){
     const element = document.getElementById(elements);
@@ -29,12 +44,9 @@ function setHiddenRemoveClass(elements){
 }
 
 // hidden class add class use
-function setHiddenAddClass(elements, inputs){
+function setHiddenAddClass(elements){
     const element = document.getElementsByClassName(elements);
-    const input = document.getElementById(inputs).value.length;
     for(const hide of element){
-        if(input > 0){
-            hide.classList.add("hidden");
-        }
-    }
+        hide.classList.add("hidden"); 
+    }   
 }
