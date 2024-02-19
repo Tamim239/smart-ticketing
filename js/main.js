@@ -12,6 +12,7 @@ for (const seat of seats) {
         }
         else if(event.target.classList.contains('selected') && count < 4){
             // check if seat selected
+            
             event.target.classList.add("selected");
             event.target.classList.add('bg-green-500');
             event.target.pointerEvents = "none";
@@ -50,7 +51,7 @@ for (const seat of seats) {
                 if(event.target.classList.contains("selected") === false){
                     seat.style.pointerEvents = 'none';
                 } 
-                else if(count == 4) {
+                else if(count === 4) {
                     enabledByBtn("applyBtn");
                 }
                 }
@@ -73,7 +74,7 @@ applyBtn.addEventListener("click", function () {
         // grand total 
         const grand = seatTotalPrice - discount;
         textInner("grandTotal", grand);
-        disabledByBtn("applyBtn");
+        addHiddenById("inputBtn")
        
 
     }
@@ -84,29 +85,22 @@ applyBtn.addEventListener("click", function () {
         // grand total
         const grand = seatTotalPrice - discount;
         textInner("grandTotal", grand); 
-        disabledByBtn("applyBtn");
+        addHiddenById("inputBtn")
+    }
+    else{
+        alert("invalid coupon")
     }
 
 })
 
 // next btn 
 const nextBtn = document.getElementById("nextBtn");
-const checkForm = document.getElementById("checkForm");
-nextBtn.addEventListener("click", function(){
-        addHiddenById("nav-section");
-        addHiddenById("header-section");
-        addHiddenById("bestOffer-section");
-        addHiddenById("paribahan-Section");
-        setHiddenRemoveClass("success");
-   
+nextBtn.addEventListener("click", function(event){
+            addHiddenById("nav-section");
+            addHiddenById("header-section");
+            addHiddenById("bestOffer-section");
+            addHiddenById("paribahan-Section");
+            setHiddenRemoveClass("success");
 })
 
-// continue btn
-// function continueBtn(){
-//     setHiddenRemoveClass("nav-section");
-//     setHiddenRemoveClass("header-section");
-//     setHiddenRemoveClass("bestOffer-section");
-//     setHiddenRemoveClass("ph-paribahan");
-//     addHiddenById("hidden");
-// }
     
