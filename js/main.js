@@ -1,14 +1,16 @@
 
+
 const seats = document.querySelectorAll(".seatNumber");
 let seatPrice = 550;
 let count = 0;
 let seatDecrement = 40;
+
 for (const seat of seats) {
     seat.addEventListener("click", function select(event) {
         if(event.target.classList.contains('bg-green-500')){
             return ;
         }
-        if(event.target.classList.contains('selected') && count < 4){
+        else if(event.target.classList.contains('selected') && count < 4){
             // check if seat selected
             event.target.classList.add("selected");
             event.target.classList.add('bg-green-500');
@@ -47,7 +49,8 @@ for (const seat of seats) {
             for(const seat of seats){
                 if(event.target.classList.contains("selected") === false){
                     seat.style.pointerEvents = 'none';
-                } else if(count == 4) {
+                } 
+                else if(count == 4) {
                     enabledByBtn("applyBtn");
                 }
                 }
@@ -61,8 +64,9 @@ for (const seat of seats) {
 const applyBtn = document.getElementById("applyBtn");
 applyBtn.addEventListener("click", function () {
     //  coupon box access
-    const couponBox = document.getElementById("couponBox").value;
-    if (couponBox === "NEW15") {
+    const couponBox = document.getElementById("couponBox");
+    if (couponBox.value === "NEW15") {
+        enabledByBtn("applyBtn");
         const seatTotalPrice = seatPrice * count;
         const discount = seatTotalPrice * .15;
         getAmountValue("showDiscount", discount);
@@ -70,9 +74,10 @@ applyBtn.addEventListener("click", function () {
         const grand = seatTotalPrice - discount;
         textInner("grandTotal", grand);
         disabledByBtn("applyBtn");
+       
 
     }
-    else if (couponBox === "Couple 20") {
+    else if (couponBox.value === "Couple 20") {
         const seatTotalPrice = seatPrice * count;
         const discount = seatTotalPrice * .20;
         getAmountValue("showDiscount", discount);
@@ -86,9 +91,22 @@ applyBtn.addEventListener("click", function () {
 
 // next btn 
 const nextBtn = document.getElementById("nextBtn");
+const checkForm = document.getElementById("checkForm");
 nextBtn.addEventListener("click", function(){
-        setHiddenAddClass("landPage");
+        addHiddenById("nav-section");
+        addHiddenById("header-section");
+        addHiddenById("bestOffer-section");
+        addHiddenById("paribahan-Section");
         setHiddenRemoveClass("success");
+   
 })
 
-
+// continue btn
+// function continueBtn(){
+//     setHiddenRemoveClass("nav-section");
+//     setHiddenRemoveClass("header-section");
+//     setHiddenRemoveClass("bestOffer-section");
+//     setHiddenRemoveClass("ph-paribahan");
+//     addHiddenById("hidden");
+// }
+    

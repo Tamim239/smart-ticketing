@@ -36,6 +36,11 @@ function enabledByBtn(elements){
     const element = document.getElementById(elements);
     element.removeAttribute("disabled", true);
 }
+// add hidden class
+function addHiddenById(elements){
+    const element = document.getElementById(elements)
+    element.classList.add("hidden")
+}
 
 // hidden class remove
 function setHiddenRemoveClass(elements){
@@ -43,10 +48,10 @@ function setHiddenRemoveClass(elements){
     element.classList.remove("hidden");
 }
 
-// hidden class add class use
-function setHiddenAddClass(elements){
+// hidden class remove class use
+function setRemoveClass(elements){
     const element = document.getElementsByClassName(elements);
     for(const hide of element){
-        hide.classList.add("hidden"); 
+        hide.classList.remove("hidden"); 
     }   
 }
